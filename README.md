@@ -1,4 +1,5 @@
 N64 Boot Stub
+=============
 
 boot_stub.bin is a replacement for the CIC-6102 IPL3. It simply loads code from
 the ROM at 0x1000 into RSP DMEM at 0xa400'0080, and then jumps to it. It works
@@ -30,10 +31,10 @@ out of DMEM, where the stub leaves it.
 
 This wouldn't have been possible for me without:
 
-* ipl3hasher by awygle
-* bootcsumr, from fin and fraser's pseultra
-* krom's N64 'Bare Metal' code, particularly the CIC-6102 disassembly
-* near, ARM9, et al's bass assembler for N64
+* [ipl3hasher](https://github.com/awygle/ipl3hasher) by awygle
+* bootcsumr, from fin and fraser's [pseultra](https://github.com/pseudophpt/pseultra)
+* krom's [N64 'Bare Metal'](https://github.com/PeterLemon/N64) project, particularly the CIC-6102 disassembly
+* near, ARM9, et al's [bass](https://github.com/ARM9/bass) assembler for N64
 
 Thanks for making my dreams come true!
 

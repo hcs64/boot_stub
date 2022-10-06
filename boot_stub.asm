@@ -12,7 +12,7 @@ endian msb
 // CP0 registers
 constant Count(9)
 constant Compare(11)
-constant Cause(16)
+constant Cause(13)
 
 // GPRs
 constant r0(0)
@@ -77,4 +77,4 @@ fill DMEM_SIZE - 12 - origin()
 // Padding
 dw 0
 // Junk for collision with expected 6102 hash, found with awygle's ipl3hasher
-dw 0x670F4, 0x44D763CB
+dw 0x1091, 0xB2DEC2CE
